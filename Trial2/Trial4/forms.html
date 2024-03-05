@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creating Forms</title>
+</head>
+
+<style>
+        th{color:white; font-size:18px}
+        form{
+            border: 1px solid grey;
+            padding:20px;
+            width:40%;
+            margin:auto
+
+        }
+        input{
+            border:none;
+            border-bottom:1px solid black;
+        }
+
+    </style>
+
+<body style="background-image: url('https://assets-global.website-files.com/60ff934f6ded2d17563ab9dd/61392e6b85cca9544875c7d2_shutterstock_589490129.jpeg')">
+<div><!--outer div starts here-->
+
+    <div style="float:left; width:80%"> <!--div that encloses the form-->
+        <form action="/submit_form.php" method="post" style="align-content: center">
+            <div>
+               <label for="fname"> Firstname</label>
+               <input type="text" id="fname" name="fname" placeholder="Firstname" required>
+
+                 <label for="lname"> Lastname</label>
+                 <input type="text" id="lname" name="lname" placeholder=" Secondname" required>
+            </div>
+
+            <br>
+            <div>
+               <label for="pass">Password</label> <br>
+               <input type="password" id="pass" name="pass" maxlength="9" required>
+            </div>
+
+            <br>
+
+            <div>
+
+               <label for="email">Email</label><br>
+               <input type="email" id="email" name="email"  required>
+            </div>
+
+            <br>
+
+            <div>
+               <label for="phone">Phone</label><br>
+               <input type="tel" id="phone" name="phone" placeholder="+254 700000000" required>
+            </div>
+
+            <br>
+
+            <div>
+
+               <label for="bdate">Date of Birth</label> <br>
+               <input type="Date" id="bdate" name="bdate" required>
+            </div>,
+
+            <br>
+
+            <div>
+
+               <label for="services">Services</label> <br>
+               <input type="Quantity" id="services" name="services" min="0" max="10" value="1"required>
+            </div>
+
+            <br>
+
+            <div>
+                <label>Title</label>
+
+                <label for="Mr.">Mr.</label>
+                <input type="radio" id="Mr." name="title" value="Mr.">
+
+                <label for="Mrs.">Mrs.</label>
+                <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+                <label for="PhD">PhD</label>
+                <input type="radio" id="PhD" name="title" value="PhD">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="payment">Payment</label> <br>
+                <select id="payment" name="payment">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="giftcard">Giftcard</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="subscribe">Subscribe</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+            </div>
+
+            <br>
+
+            <div>
+                    <label>Image</label>
+                <input type="file" name="image">
+                </div>
+
+            <br>
+
+            <div>
+                <input type="reset">
+            </div>
+
+            <br>
+
+            <div>
+                <input type="submit" name="Submit Data">
+            </div>
+
+        </form>
+    </div>
+
+</div>  <!--outer div ends here-->
+
+
+</body>
+</html>

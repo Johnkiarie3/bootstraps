@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> REGISTER </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+        th{color:white; font-size:18px}
+        form{
+            border: none;
+            padding:20px;
+            width:40%;
+            margin:auto
+
+        }
+
+body {
+    background-image: url('https://img.freepik.com/premium-photo/cityscape-with-vivid-warm-dawn-amazing-dramatic-blue-violet-cloudy-sky-dark-silhouettes-city-buildings-orange-sunlight-atmospheric-background-sunrise-overcast-weather-copy-space_102332-5289.jpg'); /* Path to your background image */
+}
+    </style>
+
+<body style="color:white">
+<div><!--outer div starts here-->
+
+    <div style="float:left; width:80%"> <!--div that encloses the form-->
+        <h2 style="text-align: center">REGISTER</h2> <b></b>
+        <form action="/action_page.php" method="post";class="centered-form"; style="align-content: center"> <b></b>
+            <div>
+               <label for="fname"> Firstname</label>
+               <input type="text" id="fname" name="fname" placeholder="Firstname" required>
+            </div>
+                 <br>
+            <div>
+                 <label for="lname"> Lastname</label>
+                 <input type="text" id="lname" name="lname" placeholder=" Lastname" required>
+            </div>
+
+            <br>
+            <div>
+               <label for="pass">Password</label> <br>
+               <input type="password" id="pass" name="pass" maxlength="9" required>
+            </div>
+
+            <br>
+
+            <div>
+
+               <label for="email">Email</label><br>
+               <input type="email" id="email" name="email"  required>
+            </div>
+
+            <br>
+
+            <div>
+               <label for="phone">Phone</label><br>
+               <input type="tel" id="phone" name="phone" placeholder="+254 700000000" required>
+            </div>
+
+            <br>
+
+            <div>
+
+               <label for="bdate">Date of Birth</label> <br>
+               <input type="Date" id="bdate" name="bdate" required>
+            </div>,
+
+            <br>
+
+            <div>
+
+               <label for="services">Services</label> <br>
+               <input type="Quantity" id="services" name="services" min="0" max="10" value="1"required>
+            </div>
+
+            <br>
+
+            <div>
+                <label>Title</label>
+
+                <label for="Mr.">Mr.</label>
+                <input type="radio" id="Mr." name="title" value="Mr.">
+
+                <label for="Mrs.">Mrs.</label>
+                <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+                <label for="PhD">PhD</label>
+                <input type="radio" id="PhD" name="title" value="PhD">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="payment">Payment</label> <br>
+                <select id="payment" name="payment">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="giftcard">Giftcard</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="subscribe">Subscribe</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+            </div>
+
+            <br>
+
+            <div>
+                    <label>Image</label>
+                <input type="file" name="image">
+                </div>
+
+            <br>
+
+            <div>
+                <input type="reset">
+            </div>
+
+            <br>
+
+            <div>
+                <input type="submit" name="Submit Data">
+            </div>
+
+        </form>
+    </div>
+
+</div>  <!--outer div ends here-->
+
+
+</body>
+</html>
