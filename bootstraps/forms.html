@@ -5,22 +5,31 @@
     <title>Creating forms</title>
 </head>
 <body>
-
-<div class="container md-5 bg-primary">
-        <h2 class="text-center">Kindly fill out this form</h2>
-        <div class="row justified-content-center">
-        <form>
-            <div class="form-group col-md-6 offset-md-1">
-                <label>Firstname</label>
-                <input type="text" class="form-control" placeholder="Firstname">
-            </div>
-            <div class="form-group col-md-6">
-                <label>Secondname</label>
-                <input type="text" class="form-control" placeholder="Lastname">
-            </div>
-        </form>
+<form style="background-color="darkblue">
+    <div>
+        <label for="fname">Firstname</label>
+        <input type="text" name="Firstname" id="fname" placeholder="Firstname">
+        <br>
+        <label for="lname">Lastname</label>
+        <input type="text" name="Lastname" id="lname" placeholder="Lastname">
     </div>
-</div>
+    <br>
+    <div>
+        <label>Email</label>
+        <input type="email" name="email">
+    </div>
+    <br>
+    <div>
+        <label>Phone</label>
+        <input type="tel" name="phone" placeholder="0700000000"
+    </div>
+    <br>
+    <div>
+        <input type="submit">
+    </div>
+    
+    
+</form>
 
 </body>
 </html>
